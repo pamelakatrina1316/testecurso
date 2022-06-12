@@ -1,0 +1,17 @@
+
+*body{
+    width: 60%;
+    height: 30%;
+    background-color:rgb(114, 82, 23);
+    text-decoration: none;
+    border-top-color: chocolate;
+}
+
+
+h1{
+    color: #eee7e7;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
