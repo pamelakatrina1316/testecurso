@@ -11,7 +11,7 @@ html,body{
 header{
     background-color: brown;
     height: 10vh;
-    margin:0 auto;
+    width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -71,5 +71,68 @@ main{
     border-width: 3px;
     border-image: linear-gradient(
         to left,
-        
-    )
+        rgba(0,0,0,0)100%,
+        #efefef 50%,
+        rgba(0,0,0,0)100%
+        )
+        100% 0 100% 0/3px 0 stretch;
+        align-content: center;
+        justify-content: space-between;
+}
+.header-2.menu{
+    height: 100%;
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    align-content: center;
+}
+.header-2 .menu li{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 24px;
+    text-decoration: none;
+    color: #8888;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.header-2 .menu li a{
+    text-decoration: none;
+    color: black;
+}
+.header-2 .menu li a:hover{
+    text-decoration: none;
+    font-size: 18px;
+    color: brown;
+}
+.search-box{
+    height: 30px;
+    border-radius: 30px;
+    border: 2x solid grey;
+    margin-top: 10px;
+    padding: 10px 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0,8s;
+}
+.search-box input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    height: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+}
+.search-box:hover input{
+    width: 190px;
+    transition: width 0.4s ease-in-out;
+}
+    
+    
